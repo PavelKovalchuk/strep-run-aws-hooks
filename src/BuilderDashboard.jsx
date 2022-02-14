@@ -8,6 +8,15 @@ import Select from '@mui/material/Select';
 import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
 
+function compareTitles( a, b ) {
+  if ( a.title < b.title ){
+    return -1;
+  }
+  if ( a.title > b.title ){
+    return 1;
+  }
+  return 0;
+}
 
 function BuilderDashboard({variants, id}) {
   const [locale, setLocale] = useState('');
@@ -40,7 +49,7 @@ function BuilderDashboard({variants, id}) {
     const cleanHook = data.hook.replace('"', '').replace('\\', '');
 
     try {
-      const result = await fetch(cleanHook, {
+      await fetch(cleanHook, {
         method: 'POST',
         mode: 'no-cors',
         credentials: 'same-origin',
@@ -49,8 +58,6 @@ function BuilderDashboard({variants, id}) {
         }
       });
 
-      console.log("result", result);
-    
       setLocale("");
       setMessage({text: "Success", type: "success"});
 
@@ -58,6 +65,8 @@ function BuilderDashboard({variants, id}) {
       setMessage({text: "Error: " + error, type: "error"});
     }
   };
+
+  variants.sort( compareTitles );
 
   return (
     <Box sx={{ minWidth: 300 }}>
