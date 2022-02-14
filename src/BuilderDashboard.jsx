@@ -49,6 +49,8 @@ function BuilderDashboard({variants, id}) {
       setMessage({text: "Error: " + error, type: "error"});
     }
   };
+
+  console.log("process.env.REACT_APP_DEVELOP_TEST_1_HOOK", process.env.REACT_APP_DEVELOP_TEST_1_HOOK);
   
   return (
     <Box sx={{ minWidth: 300 }}>
