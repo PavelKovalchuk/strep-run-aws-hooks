@@ -4,7 +4,9 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
-import BuilderDashboard from "./BuilderDashboard"
+import BuilderDashboard from "./BuilderDashboard";
+import { DevelopVariants } from "./constants/develop";
+import { MasterVariants } from "./constants/master";
 import './App.css';
 
 const theme = createTheme();
@@ -15,9 +17,15 @@ function App() {
       <CssBaseline />
       <Container fixed >
         <main>
-        <Typography variant="h1" component="h2">Build AWS</Typography>
-          <Grid container>
-            <BuilderDashboard />
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
+              <Typography variant="h3" component="h3">Develop AWS</Typography>
+              <BuilderDashboard id="Develop" variants={DevelopVariants} />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Typography variant="h3" component="h3">Master AWS</Typography>
+              <BuilderDashboard id="Master" variants={MasterVariants} />
+            </Grid>
           </Grid>
         </main>
       </Container>

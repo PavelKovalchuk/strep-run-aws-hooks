@@ -5,29 +5,75 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import Button from '@mui/material/Button';
+import Alert from '@mui/material/Alert';
 
-function BuilderDashboard() {
-  const [age, setAge] = useState('');
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
+function BuilderDashboard({variants, id}) {
+  const [locale, setLocale] = useState('');
+  const [message, setMessage] = useState({text: "", type: ""});
+
+  const handleLocaleChange = (event) => {
+    setLocale(event.target.value);
+  };
+
+  const handleCloseAlert = () => {
+    setLocale("");
+    setMessage({text: "", type: ""});
+  };
+
+  const handleBuild = async () => {
+    const data = variants.find((item) => {
+      return item.value === locale;
+    });
+
+    if(!data) {
+      setMessage({text: "No such was locale found", type: "error"});
+      return;
+    }
+
+    try {
+      await fetch(data.hook, {
+        method: 'POST',
+        mode: 'no-cors',
+        credentials: 'include',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+    
+      setLocale("");
+      setMessage({text: "Success", type: "success"});
+
+    } catch (error) {
+      setMessage({text: "Error: " + error, type: "error"});
+    }
   };
   
   return (
-    <Box sx={{ minWidth: 120 }}>
+    <Box sx={{ minWidth: 300 }}>
+
+      {message.text 
+        ? <Alert onClose={handleCloseAlert} severity={message.type}>{message.text}</Alert> 
+        : null
+      }
+      
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Age</InputLabel>
+        <InputLabel id={`${id}-InputLabel`}>{id}</InputLabel>
         <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={age}
-          label="Age"
-          onChange={handleChange}
+          labelId={`${id}-InputLabel`}
+          id={`${id}-Select`}
+          value={locale}
+          label={`${id}`}
+          onChange={handleLocaleChange}
         >
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
+          {variants.map((item) => {
+            return (
+              <MenuItem key={item.title} value={item.value}>{item.title}</MenuItem>
+            );
+          })}
         </Select>
+        <Button variant="contained" disabled={!locale} onClick={handleBuild}>Build</Button>
       </FormControl>
     </Box>
   );
