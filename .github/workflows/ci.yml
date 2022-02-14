@@ -19,7 +19,7 @@ jobs:
             - name: Build package
               run: npm run build
               env:
-                REACT_APP_DEVELOP_TEST_1_HOOK: ${{ secrets.REACT_APP_DEVELOP_TEST_1_HOOK }}
+                REACT_APP_DEVELOP_TEST_1_HOOK: ${ secrets.REACT_APP_DEVELOP_TEST_1_HOOK }
             - name: Deploy with gh-pages
               run: |
                 git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git

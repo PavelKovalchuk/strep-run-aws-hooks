@@ -26,7 +26,6 @@ function BuilderDashboard({variants, id}) {
     const data = variants.find((item) => {
       return item.value === locale;
     });
-console.log("data", data);
 
     if(!data) {
       setMessage({text: "No such locale was found", type: "error"});
@@ -57,7 +56,8 @@ console.log("data", data);
   };
 
   console.log("process.env.REACT_APP_DEVELOP_TEST_1_HOOK", process.env.REACT_APP_DEVELOP_TEST_1_HOOK);
-  
+  console.log("variants", variants);
+
   return (
     <Box sx={{ minWidth: 300 }}>
 
