@@ -68,6 +68,8 @@ function BuilderDashboard({variants, id}) {
 
   variants.sort( compareTitles );
 
+  console.log("variants", variants);
+
   return (
     <Box sx={{ minWidth: 300 }}>
 
