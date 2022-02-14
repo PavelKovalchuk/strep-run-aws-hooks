@@ -26,9 +26,10 @@ function BuilderDashboard({variants, id}) {
     const data = variants.find((item) => {
       return item.value === locale;
     });
+console.log("data", data);
 
     if(!data) {
-      setMessage({text: "No such was locale found", type: "error"});
+      setMessage({text: "No such locale was found", type: "error"});
       return;
     }
 
