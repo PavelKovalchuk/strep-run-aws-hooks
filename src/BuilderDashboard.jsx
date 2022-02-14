@@ -39,10 +39,8 @@ function BuilderDashboard({variants, id}) {
 
     const cleanHook = data.hook.replace('"', '').replace('\\', '');
 
-    console.log("cleanHook", cleanHook);
-
     try {
-      await fetch(cleanHook, {
+      const result = await fetch(cleanHook, {
         method: 'POST',
         mode: 'no-cors',
         credentials: 'same-origin',
@@ -50,6 +48,8 @@ function BuilderDashboard({variants, id}) {
           'Content-Type': 'application/json'
         }
       });
+
+      console.log("result", result);
     
       setLocale("");
       setMessage({text: "Success", type: "success"});
@@ -58,9 +58,6 @@ function BuilderDashboard({variants, id}) {
       setMessage({text: "Error: " + error, type: "error"});
     }
   };
-
-  console.log("process.env.REACT_APP_DEVELOP_TEST_1_HOOK", process.env.REACT_APP_DEVELOP_TEST_1_HOOK);
-  console.log("variants", variants);
 
   return (
     <Box sx={{ minWidth: 300 }}>
