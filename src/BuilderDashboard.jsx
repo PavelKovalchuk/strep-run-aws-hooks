@@ -41,7 +41,7 @@ function BuilderDashboard({variants, id}) {
       await fetch(data.hook, {
         method: 'POST',
         mode: 'no-cors',
-        credentials: 'include',
+        credentials: 'same-origin',
         headers: {
           'Content-Type': 'application/json'
         }
