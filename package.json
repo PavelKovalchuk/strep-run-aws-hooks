@@ -2,6 +2,7 @@
   "name": "strepsils-build",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pavelkovalchuk.github.io/strep-run-aws-hooks",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
