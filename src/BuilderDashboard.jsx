@@ -37,8 +37,12 @@ function BuilderDashboard({variants, id}) {
       return;
     }
 
+    const cleanHook = data.hook.replace('"', '').replace('\\', '');
+
+    console.log("cleanHook", cleanHook);
+
     try {
-      await fetch("https://webhooks.amplify.eu-central-1.amazonaws.com/prod/webhooks?id=9fa20c89-2086-430b-af82-d73baf7b6186&token=knKgiqR8WtTHwyBVxkDv8UT5oU4pdXkNTg0OAY8&operation=startbuild", {
+      await fetch(cleanHook, {
         method: 'POST',
         mode: 'no-cors',
         credentials: 'same-origin',
