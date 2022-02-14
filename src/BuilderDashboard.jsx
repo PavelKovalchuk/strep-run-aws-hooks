@@ -32,6 +32,11 @@ function BuilderDashboard({variants, id}) {
       return;
     }
 
+    if(!data.hook) {
+      setMessage({text: "No such hook found", type: "error"});
+      return;
+    }
+
     try {
       await fetch(data.hook, {
         method: 'POST',
