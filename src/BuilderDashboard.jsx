@@ -68,7 +68,7 @@ function BuilderDashboard({variants, id}) {
 
   variants.sort( compareTitles );
 
-  console.log("variants 2", variants);
+  console.log("variants 3", variants);
   console.log("test", process.env.REACT_APP_DEVELOP_BELGIUM);
 
   return (
