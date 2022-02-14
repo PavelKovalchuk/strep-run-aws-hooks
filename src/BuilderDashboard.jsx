@@ -69,6 +69,7 @@ function BuilderDashboard({variants, id}) {
   variants.sort( compareTitles );
 
   console.log("variants", variants);
+  console.log("test", process.env.REACT_APP_DEVELOP_BELGIUM);
 
   return (
     <Box sx={{ minWidth: 300 }}>
