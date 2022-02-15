@@ -10,3 +10,7 @@
   justify-content: space-between;
 }
 
+.MuiOutlinedInput-root svg{
+  display: none;
+}
+
