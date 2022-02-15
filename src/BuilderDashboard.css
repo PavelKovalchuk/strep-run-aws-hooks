@@ -14,3 +14,16 @@
   display: none;
 }
 
+.MuiOutlinedInput-root {
+  width: 100%;
+}
+
+.MuiButton-root {
+  width: 100%;
+}
+
+.MuiBox-root {
+  border: 1px solid forestgreen;
+  padding: 20px;
+}
+
