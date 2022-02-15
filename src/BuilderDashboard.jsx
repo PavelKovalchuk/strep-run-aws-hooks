@@ -8,6 +8,10 @@ import Select from '@mui/material/Select';
 import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
 
+import Flags from 'country-flag-icons/react/3x2';
+
+import './BuilderDashboard.css';
+
 function compareTitles( a, b ) {
   if ( a.title < b.title ){
     return -1;
@@ -69,7 +73,7 @@ function BuilderDashboard({variants, id}) {
   variants.sort( compareTitles );
 
   return (
-    <Box sx={{ minWidth: 300 }}>
+    <Box sx={{ minWidth: 300 }} className="builderDashboard">
 
       {message.text 
         ? <Alert onClose={handleCloseAlert} severity={message.type}>{message.text}</Alert> 
@@ -86,8 +90,16 @@ function BuilderDashboard({variants, id}) {
           onChange={handleLocaleChange}
         >
           {variants.map((item) => {
+            const Flag = item?.flagCode ? Flags[item.flagCode.toUpperCase()] : null;
+
             return (
-              <MenuItem key={item.title} value={item.value}>{item.title}</MenuItem>
+              <MenuItem 
+                key={item.title} 
+                value={item.value}
+              >
+              {item.title}
+              {Flag ? <Flag title={item.title} /> : null}
+            </MenuItem>
             );
           })}
         </Select>
