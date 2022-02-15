@@ -49,4 +49,34 @@ export const MasterVariants = [
     value: "France",
     hook: process.env.REACT_APP_MASTER_FRANCE
   },
+  {
+    title: "Netherlands",
+    value: "Netherlands",
+    hook: process.env.REACT_APP_MASTER_NETHERLANDS
+  },
+  {
+    title: "Denmark",
+    value: "Denmark",
+    hook: process.env.REACT_APP_MASTER_DENMARK
+  },
+  {
+    title: "Finland",
+    value: "Finland",
+    hook: process.env.REACT_APP_MASTER_FINLAND
+  },
+  {
+    title: "Norway",
+    value: "Norway",
+    hook: process.env.REACT_APP_MASTER_NORWAY
+  },
+  {
+    title: "Sweden",
+    value: "Sweden",
+    hook: process.env.REACT_APP_MASTER_SWEDEN
+  },
+  {
+    title: "Ireland",
+    value: "Ireland",
+    hook: process.env.REACT_APP_MASTER_IRELAND
+  },
 ];

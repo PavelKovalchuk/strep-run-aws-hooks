@@ -49,4 +49,34 @@ export const DevelopVariants = [
     value: "France",
     hook: process.env.REACT_APP_DEVELOP_FRANCE
   },
+  {
+    title: "Netherlands",
+    value: "Netherlands",
+    hook: process.env.REACT_APP_DEVELOP_NETHERLANDS
+  },
+  {
+    title: "Denmark",
+    value: "Denmark",
+    hook: process.env.REACT_APP_DEVELOP_DENMARK
+  },
+  {
+    title: "Finland",
+    value: "Finland",
+    hook: process.env.REACT_APP_DEVELOP_FINLAND
+  },
+  {
+    title: "Norway",
+    value: "Norway",
+    hook: process.env.REACT_APP_DEVELOP_NORWAY
+  },
+  {
+    title: "Sweden",
+    value: "Sweden",
+    hook: process.env.REACT_APP_DEVELOP_SWEDEN
+  },
+  {
+    title: "Ireland",
+    value: "Ireland",
+    hook: process.env.REACT_APP_DEVELOP_IRELAND
+  },
 ];
