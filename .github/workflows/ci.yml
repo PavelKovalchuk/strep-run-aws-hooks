@@ -20,7 +20,7 @@ jobs:
               run: npm run build
               env:
                 REACT_APP_TEST_1: testValue
-                REACT_APP_TEST_2: ${{ secrets.REACT_APP_TEST_2 }}
+                REACT_APP_TEST_2: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
                 REACT_APP_DEVELOP_SPAIN: ${{ secrets.REACT_APP_DEVELOP_SPAIN }}
                 REACT_APP_MASTER_SPAIN: ${{ secrets.REACT_APP_MASTER_SPAIN }}
                 REACT_APP_DEVELOP_HUNGARY: ${{ secrets.REACT_APP_DEVELOP_HUNGARY }}
