@@ -21,6 +21,26 @@ jobs:
               env:
                 REACT_APP_TEST_1: testValue
                 REACT_APP_TEST_2: ${{ secrets.REACT_APP_DEVELOP_ARABIA }}
+                REACT_APP_DEVELOP_SPAIN: ${{ secrets.REACT_APP_DEVELOP_SPAIN }}
+                REACT_APP_MASTER_SPAIN: ${{ secrets.REACT_APP_MASTER_SPAIN }}
+                REACT_APP_DEVELOP_HUNGARY: ${{ secrets.REACT_APP_DEVELOP_HUNGARY }}
+                REACT_APP_MASTER_HUNGARY: ${{ secrets.REACT_APP_MASTER_HUNGARY }}
+                REACT_APP_DEVELOP_AUSTRIA: ${{ secrets.REACT_APP_DEVELOP_AUSTRIA }}
+                REACT_APP_MASTER_AUSTRIA: ${{ secrets.REACT_APP_MASTER_AUSTRIA }}
+                REACT_APP_DEVELOP_ARABIA: ${{ secrets.REACT_APP_DEVELOP_ARABIA }}
+                REACT_APP_MASTER_ARABIA: ${{ secrets.REACT_APP_MASTER_ARABIA }}
+                REACT_APP_DEVELOP_ITALY: ${{ secrets.REACT_APP_DEVELOP_ITALY }}
+                REACT_APP_MASTER_ITALY: ${{ secrets.REACT_APP_MASTER_ITALY }}
+                REACT_APP_DEVELOP_UK: ${{ secrets.REACT_APP_DEVELOP_UK }}
+                REACT_APP_MASTER_UK: ${{ secrets.REACT_APP_MASTER_UK }}
+                REACT_APP_DEVELOP_ROMANIA: ${{ secrets.REACT_APP_DEVELOP_ROMANIA }}
+                REACT_APP_MASTER_ROMANIA: ${{ secrets.REACT_APP_MASTER_ROMANIA }}
+                REACT_APP_DEVELOP_COLUMBIA: ${{ secrets.REACT_APP_DEVELOP_COLUMBIA }}
+                REACT_APP_MASTER_COLUMBIA: ${{ secrets.REACT_APP_MASTER_COLUMBIA }}
+                REACT_APP_DEVELOP_BELGIUM: ${{ secrets.REACT_APP_DEVELOP_BELGIUM }}
+                REACT_APP_MASTER_BELGIUM: ${{ secrets.REACT_APP_MASTER_BELGIUM }}
+                REACT_APP_DEVELOP_FRANCE: ${{ secrets.REACT_APP_DEVELOP_FRANCE }}
+                REACT_APP_MASTER_FRANCE: ${{ secrets.REACT_APP_MASTER_FRANCE }}
             - name: Deploy with gh-pages
               run: |
                 git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
