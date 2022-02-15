@@ -27,6 +27,7 @@ export const DevelopVariants = [
     title: "Italy",
     value: "Italy",
     flagCode: "it",
+    webLink: "https://develop.d1tmxp48xm1j0i.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_ITALY
   },
   {

@@ -12,12 +12,13 @@ import Grid from '@mui/material/Grid';
 import Flags from 'country-flag-icons/react/3x2';
 
 import './BuilderDashboard.css';
-import { compareTitles } from './helpers';
+import { convertDate } from "./helpers"
 
 
 function BuilderDashboard({variants, id}) {
   const [locale, setLocale] = useState('');
   const [message, setMessage] = useState({text: "", type: ""});
+  const [lastModified, setLastModified] = useState('');
 
   const handleLocaleChange = (event) => {
     setLocale(event.target.value);
@@ -26,6 +27,7 @@ function BuilderDashboard({variants, id}) {
   const handleCloseAlert = () => {
     setLocale("");
     setMessage({text: "", type: ""});
+    setLastModified("");
   };
 
   const handleBuild = async () => {
@@ -54,9 +56,9 @@ function BuilderDashboard({variants, id}) {
           'Content-Type': 'application/json'
         }
       });
-
+      
+      setMessage({text: `${locale}: Success`, type: "success"});
       setLocale("");
-      setMessage({text: "Success", type: "success"});
 
     } catch (error) {
       setMessage({text: "Error: " + error, type: "error"});
@@ -73,44 +75,48 @@ function BuilderDashboard({variants, id}) {
       return;
     }
 
-    /* if(!data.hook) {
-      setMessage({text: "No such hook found", type: "error"});
+    if(!data.webLink) {
+      setMessage({text: "No such webLink found", type: "error"});
       return;
-    } */
-
-    // const cleanHook = data.hook.replace('"', '').replace('\\', '');
-
-
+    }
 
     try {
-      const result = await fetch("https://develop.d1tmxp48xm1j0i.amplifyapp.com/", {
+      const result = await fetch(data.webLink, {
         method: 'GET',
-        mode: 'no-cors',
-        // credentials: 'same-origin',
         headers: {
-          'Content-Type': 'text/html'
+          'Content-Type': 'text/plain'
         }
-      }).then((data) => {
-        console.log("data", data);
       });
 
-      console.log("result", result);
+      if(!result.ok) {
+        setMessage({text: "Request failed", type: "error"});
+        return;
+      }
 
+      const lastModifiedResponse = result.headers.get('last-modified');
+      const lastModifiedDisplay = convertDate(lastModifiedResponse);
+      if(lastModifiedDisplay) {
+        setLastModified(`${locale}: ${lastModifiedDisplay}`);
+      }
+      
+      setMessage({text: `${locale}: Success`, type: "success"});
       setLocale("");
-      setMessage({text: "Success", type: "success"});
 
     } catch (error) {
       setMessage({text: "Error: " + error, type: "error"});
     }
   };
 
-  variants.sort( compareTitles );
-
   return (
     <Box sx={{ minWidth: 300 }} className="builderDashboard">
 
       {message.text 
         ? <Alert onClose={handleCloseAlert} severity={message.type}>{message.text}</Alert> 
+        : null
+      }
+
+      {lastModified 
+        ? <Alert onClose={handleCloseAlert} severity="info">{lastModified}</Alert> 
         : null
       }
       

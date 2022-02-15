@@ -9,9 +9,15 @@ import { DevelopVariants } from "./constants/develop";
 import { MasterVariants } from "./constants/master";
 import { LiveCopiesVariants } from "./constants/liveCopies";
 import { ProdVariants } from "./constants/prod";
+import { compareTitles } from './helpers';
 import './App.css';
 
 const theme = createTheme();
+
+DevelopVariants.sort( compareTitles );
+MasterVariants.sort( compareTitles );
+LiveCopiesVariants.sort( compareTitles );
+ProdVariants.sort( compareTitles );
 
 function App() {
   return (
