@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
@@ -8,13 +8,24 @@ import FormControl from '@mui/material/FormControl';
 import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
 
-import { CheckValue } from "./constants/secrets";
+import { CheckValue, SecretCookieLabel, SecretCookieValue } from "./constants/secrets";
+import { setCookie, getCookie, eraseCookie } from "./helpers";
 import './Checker.css';
 
 function Checker({setIsLoadDashboard}) {
   const [valueToCheck, setValueToCheck] = useState('');
   const [isValid, setIsValid] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  useEffect(() => {
+    const secret = getCookie(SecretCookieLabel);
+    if(secret !== SecretCookieValue) {
+      eraseCookie(SecretCookieLabel);
+      return;
+    }
+
+    setIsLoadDashboard(true);
+  }, [setIsLoadDashboard]);
 
   const handleChange = (event) => {
     setValueToCheck(event.target.value);
@@ -39,6 +50,7 @@ function Checker({setIsLoadDashboard}) {
 
     setIsValid(true);
     setIsLoadDashboard(true);
+    setCookie(SecretCookieLabel, SecretCookieValue, 7);
   };
 
 
@@ -81,7 +93,7 @@ function Checker({setIsLoadDashboard}) {
           </FormControl>
         </form>
     </Grid>
-    
+
   </Box>
   );
 }
