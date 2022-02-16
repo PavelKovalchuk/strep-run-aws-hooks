@@ -149,52 +149,52 @@ function BuilderDashboard({variants, id}) {
       <FormControl fullWidth>
         
         <Grid container spacing={4}>
-            <Grid item xs={12}>
-              <InputLabel id={`${id}-InputLabel`}>{id}</InputLabel>
-              <Select
-                labelId={`${id}-InputLabel`}
-                id={`${id}-Select`}
-                value={locale}
-                label={`${id}`}
-                onChange={handleLocaleChange}
-              >
-                {variants.map((item) => {
-                  const Flag = item?.flagCode ? Flags[item.flagCode.toUpperCase()] : null;
+          <Grid item xs={12}>
+            <InputLabel id={`${id}-InputLabel`}>{id}</InputLabel>
+            <Select
+              labelId={`${id}-InputLabel`}
+              id={`${id}-Select`}
+              value={locale}
+              label={`${id}`}
+              onChange={handleLocaleChange}
+            >
+              {variants.map((item) => {
+                const Flag = item?.flagCode ? Flags[item.flagCode.toUpperCase()] : null;
 
-                  return (
-                    <MenuItem 
-                      key={item.title} 
-                      value={item.value}
-                    >
+                return (
+                  <MenuItem 
+                    key={item.title} 
+                    value={item.value}
+                  >
                     {item.title}
                     {Flag ? <Flag title={item.title} /> : null}
                   </MenuItem>
                   );
                 })}
-              </Select>
-            </Grid>
-            <Grid item xs={12}>
-              <Button 
-                variant="contained" 
-                disabled={!locale} 
-                onClick={handleBuild}
-                size="large"
-              >
-                Build
-              </Button>
-            </Grid>
-            <Grid item xs={12}>
-              <Button 
-                variant="outlined" 
-                color="secondary" 
-                disabled={!locale} 
-                onClick={handleLastTimeBuild}
-                size="large"
-              >
-                Get Last Time Build
-              </Button>
-            </Grid>
+            </Select>
+          </Grid>  
+          <Grid item xs={12}>
+            <Button 
+              variant="contained" 
+              disabled={!locale} 
+              onClick={handleBuild}
+              size="large"
+            >
+              Build
+            </Button>
           </Grid>
+          <Grid item xs={12}>
+            <Button 
+              variant="outlined" 
+              color="secondary" 
+              disabled={!locale} 
+              onClick={handleLastTimeBuild}
+              size="large"
+            >
+               Get Last Time Build
+            </Button>
+          </Grid>
+        </Grid>
       </FormControl>
     </Box>
   );

@@ -1,0 +1,1 @@
+export const CheckValue = process.env.REACT_APP_CHECK_VALUE;

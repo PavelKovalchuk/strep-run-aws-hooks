@@ -1,0 +1,20 @@
+.MuiBox-root {
+  border: 1px solid forestgreen;
+  padding: 20px;
+}
+
+.MuiGrid-root {
+  margin-top: 20px;
+}
+
+.MuiFormControl-root {
+  width: 100%;
+}
+
+.MuiButton-root {
+  width: 100%;
+}
+
+form {
+  width: 100%;
+}
