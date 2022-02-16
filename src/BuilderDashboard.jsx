@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
@@ -12,13 +12,27 @@ import Grid from '@mui/material/Grid';
 import Flags from 'country-flag-icons/react/3x2';
 
 import './BuilderDashboard.css';
-import { convertDate } from "./helpers"
+import { convertDate, getDataByLocale } from "./helpers"
 
 
 function BuilderDashboard({variants, id}) {
   const [locale, setLocale] = useState('');
   const [message, setMessage] = useState({text: "", type: ""});
   const [lastModified, setLastModified] = useState('');
+  const [currentWebLink, setCurrentWebLink] = useState('');
+
+  useEffect(() => {
+    if(!locale) {
+      return;
+    }
+    const data = getDataByLocale(variants, locale);
+    if(data?.webLink) {
+      setCurrentWebLink(data.webLink);
+      setMessage({text: "", type: ""});
+    } else {
+      setMessage({text: `No webLink for a ${locale} was found`, type: "error"});
+    }
+  }, [locale, variants]);
 
   const handleLocaleChange = (event) => {
     setLocale(event.target.value);
@@ -31,9 +45,7 @@ function BuilderDashboard({variants, id}) {
   };
 
   const handleBuild = async () => {
-    const data = variants.find((item) => {
-      return item.value === locale;
-    });
+    const data = getDataByLocale(variants, locale);
 
     if(!data) {
       setMessage({text: "No such locale was found", type: "error"});
@@ -117,6 +129,20 @@ function BuilderDashboard({variants, id}) {
 
       {lastModified 
         ? <Alert onClose={handleCloseAlert} severity="info">{lastModified}</Alert> 
+        : null
+      }
+
+      {currentWebLink && locale ? 
+        <div className="web-link">
+          <Button 
+            variant="outlined" 
+            size="large"
+            href={currentWebLink}
+            target="_blank"
+          >
+            Link to {locale}
+          </Button>
+        </div>
         : null
       }
       

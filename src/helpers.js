@@ -14,3 +14,9 @@ export function convertDate( date ) {
   }
   return new Date(date).toLocaleString('uk-UA', {day:'numeric', month:'long', year:'numeric', weekday:'long', hour:'2-digit', minute:'2-digit', second: '2-digit'});
 }
+
+export function getDataByLocale( locales, locale ) {
+  return locales.find((item) => {
+    return item.value === locale;
+  });
+}
