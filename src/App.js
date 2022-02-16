@@ -27,21 +27,21 @@ function App() {
         <main>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
-              <Typography variant="h3" component="h3">Develop AWS</Typography>
+              <Typography variant="h3" component="h3">Develop</Typography>
               <BuilderDashboard id="Develop" variants={DevelopVariants} />
             </Grid>
             <Grid item xs={12} md={6}>
-              <Typography variant="h3" component="h3">Master AWS</Typography>
+              <Typography variant="h3" component="h3">Master</Typography>
               <BuilderDashboard id="Master" variants={MasterVariants} />
             </Grid>
           </Grid>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
-              <Typography variant="h3" component="h3">Live Copies AWS</Typography>
+              <Typography variant="h3" component="h3">Live Copies</Typography>
               <BuilderDashboard id="LiveCopies" variants={LiveCopiesVariants} />
             </Grid>
             <Grid item xs={12} md={6}>
-              <Typography variant="h3" component="h3">Prod AWS</Typography>
+              <Typography variant="h3" component="h3">Prod</Typography>
               <BuilderDashboard id="Prod" variants={ProdVariants} />
             </Grid>
           </Grid>
