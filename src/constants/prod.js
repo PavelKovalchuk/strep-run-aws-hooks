@@ -13,4 +13,11 @@ export const ProdVariants = [
     webLink: "https://master.d2m7ojqmho0ts8.amplifyapp.com/",
     hook: process.env.REACT_APP_PROD_ITALY
   },
+  {
+    title: "Hungary",
+    value: "Hungary",
+    flagCode: "hu",
+    webLink: "https://master.decgcmtg25vbr.amplifyapp.com/",
+    hook: process.env.REACT_APP_PROD_HUNGARY
+  },
 ];
