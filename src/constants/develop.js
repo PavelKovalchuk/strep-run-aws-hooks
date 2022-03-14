@@ -111,4 +111,11 @@ export const DevelopVariants = [
     webLink: "https://develop.d29uee3cteh6i5.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_IRELAND
   },
+  {
+    title: "Australia",
+    value: "Australia",
+    flagCode: "au",
+    webLink: "https://develop.d2um4vw2kmu3gl.amplifyapp.com/",
+    hook: process.env.REACT_APP_DEVELOP_AUSTRALIA
+  },
 ];
