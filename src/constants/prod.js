@@ -10,7 +10,7 @@ export const ProdVariants = [
     title: "Italy",
     value: "Italy",
     flagCode: "it",
-    webLink: "https://master.d2m7ojqmho0ts8.amplifyapp.com/",
+    webLink: "https://master.d2cs2e11o073d6.amplifyapp.com/",
     hook: process.env.REACT_APP_PROD_ITALY
   },
   {
