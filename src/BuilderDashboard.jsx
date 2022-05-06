@@ -12,7 +12,8 @@ import Grid from '@mui/material/Grid';
 import Flags from 'country-flag-icons/react/3x2';
 
 import './BuilderDashboard.css';
-import { convertDate, getDataByLocale } from "./helpers"
+import { convertDate, getDataByLocale } from "./helpers";
+import { AwsDomain } from "./constants/secrets";
 
 
 function BuilderDashboard({variants, id}) {
@@ -20,6 +21,7 @@ function BuilderDashboard({variants, id}) {
   const [message, setMessage] = useState({text: "", type: ""});
   const [lastModified, setLastModified] = useState('');
   const [currentWebLink, setCurrentWebLink] = useState('');
+  const [currentAwsCode, setCurrentAwsCode] = useState('');
 
   useEffect(() => {
     if(!locale) {
@@ -31,6 +33,13 @@ function BuilderDashboard({variants, id}) {
       setMessage({text: "", type: ""});
     } else {
       setMessage({text: `No webLink for a ${locale} was found`, type: "error"});
+    }
+
+    if(data?.awsCode) {
+      setCurrentAwsCode(data.awsCode);
+      setMessage({text: "", type: ""});
+    } else {
+      setMessage({text: `No awsCode for a ${locale} was found`, type: "error"});
     }
   }, [locale, variants]);
 
@@ -141,6 +150,20 @@ function BuilderDashboard({variants, id}) {
             target="_blank"
           >
             Link to {locale}
+          </Button>
+        </div>
+        : null
+      }
+
+      {currentAwsCode && locale ? 
+        <div className="web-link">
+          <Button 
+            variant="outlined" 
+            size="large"
+            href={`${AwsDomain}${currentAwsCode}`}
+            target="_blank"
+          >
+            AWS Link to {locale}
           </Button>
         </div>
         : null
