@@ -118,4 +118,25 @@ export const MasterVariants = [
     webLink: "https://master.d2um4vw2kmu3gl.amplifyapp.com/",
     hook: process.env.REACT_APP_MASTER_AUSTRALIA
   },
+  {
+    title: "Croatia",
+    value: "Croatia",
+    flagCode: "hr",
+    webLink: "https://master.d15xr5s7fo65n.amplifyapp.com/",
+    hook: process.env.REACT_APP_MASTER_CROATIA
+  },
+  {
+    title: "Vietnam",
+    value: "Vietnam",
+    flagCode: "vn",
+    webLink: "https://master.d3uqp52g1z8uim.amplifyapp.com/",
+    hook: process.env.REACT_APP_MASTER_VIETNAM
+  },
+  {
+    title: "Switzerland",
+    value: "Switzerland",
+    flagCode: "ch",
+    webLink: "https://master.d3tv64kxbqh97e.amplifyapp.com/",
+    hook: process.env.REACT_APP_MASTER_SWITZERLAND
+  },
 ];

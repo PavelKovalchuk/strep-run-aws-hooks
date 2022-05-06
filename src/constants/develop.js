@@ -118,4 +118,25 @@ export const DevelopVariants = [
     webLink: "https://develop.d2um4vw2kmu3gl.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_AUSTRALIA
   },
+  {
+    title: "Croatia",
+    value: "Croatia",
+    flagCode: "hr",
+    webLink: "https://develop.d15xr5s7fo65n.amplifyapp.com/",
+    hook: process.env.REACT_APP_DEVELOP_CROATIA
+  },
+  {
+    title: "Vietnam",
+    value: "Vietnam",
+    flagCode: "vn",
+    webLink: "https://develop.d3uqp52g1z8uim.amplifyapp.com/",
+    hook: process.env.REACT_APP_DEVELOP_VIETNAM
+  },
+  {
+    title: "Switzerland",
+    value: "Switzerland",
+    flagCode: "ch",
+    webLink: "https://develop.d3tv64kxbqh97e.amplifyapp.com/",
+    hook: process.env.REACT_APP_DEVELOP_SWITZERLAND
+  },
 ];
