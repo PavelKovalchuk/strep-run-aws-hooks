@@ -4,139 +4,159 @@ export const MasterVariants = [
     value: "Spain",
     flagCode: "es",
     webLink: "https://master.dx4ptsyt3ffpx.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_SPAIN
+    hook: process.env.REACT_APP_MASTER_SPAIN,
+    awsCode: "dx4ptsyt3ffpx",
   },
   {
     title: "Hungary",
     value: "Hungary",
     flagCode: "hu",
     webLink: "https://master.d1yx0a9delv344.amplifyapp.com/ ",
-    hook: process.env.REACT_APP_MASTER_HUNGARY
+    hook: process.env.REACT_APP_MASTER_HUNGARY,
+    awsCode: "d1yx0a9delv344",
   },
   {
     title: "Austria",
     value: "Austria",
     flagCode: "at",
     webLink: "https://master.d2kfsgd3y7wjyz.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_AUSTRIA
+    hook: process.env.REACT_APP_MASTER_AUSTRIA,
+    awsCode: "d2kfsgd3y7wjyz",
   },
   {
     title: "Arabia",
     value: "Arabia",
     flagCode: "sa",
     webLink: "https://master.d1aqbur9o29k3d.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_ARABIA
+    hook: process.env.REACT_APP_MASTER_ARABIA,
+    awsCode: "d1aqbur9o29k3d",
   },
   {
     title: "Italy",
     value: "Italy",
     flagCode: "it",
     webLink: "https://master.d1tmxp48xm1j0i.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_ITALY
+    hook: process.env.REACT_APP_MASTER_ITALY,
+    awsCode: "d1tmxp48xm1j0i",
   },
   {
     title: "UK",
     value: "UK",
     flagCode: "gb",
     webLink: "https://master.d3b8w5n22dhm2c.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_UK
+    hook: process.env.REACT_APP_MASTER_UK,
+    awsCode: "d3b8w5n22dhm2c",
   },
   {
     title: "Romania",
     value: "Romania",
     flagCode: "ro",
     webLink: "https://master.d2sb1mfbvo8p8u.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_ROMANIA
+    hook: process.env.REACT_APP_MASTER_ROMANIA,
+    awsCode: "d2sb1mfbvo8p8u",
   },
   {
     title: "Columbia",
     value: "Columbia",
     flagCode: "co",
     webLink: "https://master.d18yrx9ojfawav.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_COLUMBIA
+    hook: process.env.REACT_APP_MASTER_COLUMBIA,
+    awsCode: "d18yrx9ojfawav",
   },
   {
     title: "Belgium",
     value: "Belgium",
     flagCode: "be",
     webLink: "https://master.d2jqq2l5zfwgty.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_BELGIUM
+    hook: process.env.REACT_APP_MASTER_BELGIUM,
+    awsCode: "d2jqq2l5zfwgty",
   },
   {
     title: "France",
     value: "France",
     flagCode: "fr",
     webLink: "https://master.d1p0xhd2jj2oay.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_FRANCE
+    hook: process.env.REACT_APP_MASTER_FRANCE,
+    awsCode: "dqnpwm4rfo96m",
   },
   {
     title: "Netherlands",
     value: "Netherlands",
     flagCode: "nl",
     webLink: "https://master.d2trwhqp32e5su.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_NETHERLANDS
+    hook: process.env.REACT_APP_MASTER_NETHERLANDS,
+    awsCode: "d2trwhqp32e5su",
   },
   {
     title: "Denmark",
     value: "Denmark",
     flagCode: "dk",
     webLink: "https://master.d3ut426xt5z6im.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_DENMARK
+    hook: process.env.REACT_APP_MASTER_DENMARK,
+    awsCode: "d3ut426xt5z6im",
   },
   {
     title: "Finland",
     value: "Finland",
     flagCode: "fi",
     webLink: "https://master.d9vwkv5oekeqm.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_FINLAND
+    hook: process.env.REACT_APP_MASTER_FINLAND,
+    awsCode: "d9vwkv5oekeqm",
   },
   {
     title: "Norway",
     value: "Norway",
     flagCode: "no",
     webLink: "https://master.d34sf34a8mnvgr.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_NORWAY
+    hook: process.env.REACT_APP_MASTER_NORWAY,
+    awsCode: "d34sf34a8mnvgr",
   },
   {
     title: "Sweden",
     value: "Sweden",
     flagCode: "se",
     webLink: "https://master.d20kklgp32j4p5.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_SWEDEN
+    hook: process.env.REACT_APP_MASTER_SWEDEN,
+    awsCode: "d20kklgp32j4p5",
   },
   {
     title: "Ireland",
     value: "Ireland",
     flagCode: "ie",
     webLink: "https://master.d29uee3cteh6i5.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_IRELAND
+    hook: process.env.REACT_APP_MASTER_IRELAND,
+    awsCode: "d29uee3cteh6i5",
   },
   {
     title: "Australia",
     value: "Australia",
     flagCode: "au",
     webLink: "https://master.d2um4vw2kmu3gl.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_AUSTRALIA
+    hook: process.env.REACT_APP_MASTER_AUSTRALIA,
+    awsCode: "d2um4vw2kmu3gl",
   },
   {
     title: "Croatia",
     value: "Croatia",
     flagCode: "hr",
     webLink: "https://master.d15xr5s7fo65n.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_CROATIA
+    hook: process.env.REACT_APP_MASTER_CROATIA,
+    awsCode: "d15xr5s7fo65n",
   },
   {
     title: "Vietnam",
     value: "Vietnam",
     flagCode: "vn",
     webLink: "https://master.d3uqp52g1z8uim.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_VIETNAM
+    hook: process.env.REACT_APP_MASTER_VIETNAM,
+    awsCode: "d3uqp52g1z8uim",
   },
   {
     title: "Switzerland",
     value: "Switzerland",
     flagCode: "ch",
     webLink: "https://master.d3tv64kxbqh97e.amplifyapp.com/",
-    hook: process.env.REACT_APP_MASTER_SWITZERLAND
+    hook: process.env.REACT_APP_MASTER_SWITZERLAND,
+    awsCode: "d3tv64kxbqh97e",
   },
 ];

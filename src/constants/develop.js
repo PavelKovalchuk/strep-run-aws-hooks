@@ -5,7 +5,7 @@ export const DevelopVariants = [
     flagCode: "es",
     webLink: "https://develop.dx4ptsyt3ffpx.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_SPAIN,
-    awsCode: "dg59lejy18vx3",
+    awsCode: "dx4ptsyt3ffpx",
   },
   {
     title: "Hungary",
@@ -13,7 +13,7 @@ export const DevelopVariants = [
     flagCode: "hu",
     webLink: "https://develop.d1yx0a9delv344.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_HUNGARY,
-    awsCode: "",
+    awsCode: "d1yx0a9delv344",
   },
   {
     title: "Austria",
@@ -21,7 +21,7 @@ export const DevelopVariants = [
     flagCode: "at",
     webLink: "https://develop.d2kfsgd3y7wjyz.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_AUSTRIA,
-    awsCode: "",
+    awsCode: "d2kfsgd3y7wjyz",
   },
   {
     title: "Arabia",
@@ -29,7 +29,7 @@ export const DevelopVariants = [
     flagCode: "sa",
     webLink: "https://develop.d1aqbur9o29k3d.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_ARABIA,
-    awsCode: "",
+    awsCode: "d1aqbur9o29k3d",
   },
   {
     title: "Italy",
@@ -37,7 +37,7 @@ export const DevelopVariants = [
     flagCode: "it",
     webLink: "https://develop.d1tmxp48xm1j0i.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_ITALY,
-    awsCode: "",
+    awsCode: "d1tmxp48xm1j0i",
   },
   {
     title: "UK",
@@ -45,7 +45,7 @@ export const DevelopVariants = [
     flagCode: "gb",
     webLink: "https://develop.d3b8w5n22dhm2c.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_UK,
-    awsCode: "",
+    awsCode: "d3b8w5n22dhm2c",
   },
   {
     title: "Romania",
@@ -53,7 +53,7 @@ export const DevelopVariants = [
     flagCode: "ro",
     webLink: "https://develop.d2sb1mfbvo8p8u.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_ROMANIA,
-    awsCode: "",
+    awsCode: "d2sb1mfbvo8p8u",
   },
   {
     title: "Columbia",
@@ -61,7 +61,7 @@ export const DevelopVariants = [
     flagCode: "co",
     webLink: "https://develop.d18yrx9ojfawav.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_COLUMBIA,
-    awsCode: "",
+    awsCode: "d18yrx9ojfawav",
   },
   {
     title: "Belgium",
@@ -69,7 +69,7 @@ export const DevelopVariants = [
     flagCode: "be",
     webLink: "https://develop.d2jqq2l5zfwgty.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_BELGIUM,
-    awsCode: "",
+    awsCode: "d2jqq2l5zfwgty",
   },
   {
     title: "France",
@@ -77,7 +77,7 @@ export const DevelopVariants = [
     flagCode: "fr",
     webLink: "https://develop.d1p0xhd2jj2oay.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_FRANCE,
-    awsCode: "",
+    awsCode: "dqnpwm4rfo96m",
   },
   {
     title: "Netherlands",
@@ -85,7 +85,7 @@ export const DevelopVariants = [
     flagCode: "nl",
     webLink: "https://develop.d2trwhqp32e5su.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_NETHERLANDS,
-    awsCode: "",
+    awsCode: "d2trwhqp32e5su",
   },
   {
     title: "Denmark",
@@ -93,7 +93,7 @@ export const DevelopVariants = [
     flagCode: "dk",
     webLink: "https://develop.d3ut426xt5z6im.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_DENMARK,
-    awsCode: "",
+    awsCode: "d3ut426xt5z6im",
   },
   {
     title: "Finland",
@@ -101,7 +101,7 @@ export const DevelopVariants = [
     flagCode: "fi",
     webLink: "https://develop.d9vwkv5oekeqm.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_FINLAND,
-    awsCode: "",
+    awsCode: "d9vwkv5oekeqm",
   },
   {
     title: "Norway",
@@ -109,7 +109,7 @@ export const DevelopVariants = [
     flagCode: "no",
     webLink: "https://develop.d34sf34a8mnvgr.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_NORWAY,
-    awsCode: "",
+    awsCode: "d34sf34a8mnvgr",
   },
   {
     title: "Sweden",
@@ -117,7 +117,7 @@ export const DevelopVariants = [
     flagCode: "se",
     webLink: "https://develop.d20kklgp32j4p5.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_SWEDEN,
-    awsCode: "",
+    awsCode: "d20kklgp32j4p5",
   },
   {
     title: "Ireland",
@@ -125,7 +125,7 @@ export const DevelopVariants = [
     flagCode: "ie",
     webLink: "https://develop.d29uee3cteh6i5.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_IRELAND,
-    awsCode: "",
+    awsCode: "d29uee3cteh6i5",
   },
   {
     title: "Australia",
@@ -133,7 +133,7 @@ export const DevelopVariants = [
     flagCode: "au",
     webLink: "https://develop.d2um4vw2kmu3gl.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_AUSTRALIA,
-    awsCode: "",
+    awsCode: "d2um4vw2kmu3gl",
   },
   {
     title: "Croatia",
@@ -141,7 +141,7 @@ export const DevelopVariants = [
     flagCode: "hr",
     webLink: "https://develop.d15xr5s7fo65n.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_CROATIA,
-    awsCode: "",
+    awsCode: "d15xr5s7fo65n",
   },
   {
     title: "Vietnam",
@@ -149,7 +149,7 @@ export const DevelopVariants = [
     flagCode: "vn",
     webLink: "https://develop.d3uqp52g1z8uim.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_VIETNAM,
-    awsCode: "",
+    awsCode: "d3uqp52g1z8uim",
   },
   {
     title: "Switzerland",
@@ -157,6 +157,6 @@ export const DevelopVariants = [
     flagCode: "ch",
     webLink: "https://develop.d3tv64kxbqh97e.amplifyapp.com/",
     hook: process.env.REACT_APP_DEVELOP_SWITZERLAND,
-    awsCode: "",
+    awsCode: "d3tv64kxbqh97e",
   },
 ];
