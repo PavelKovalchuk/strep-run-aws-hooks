@@ -20,4 +20,12 @@ export const ProdVariants = [
     webLink: "https://master.d2urcb37znv1la.amplifyapp.com/",
     hook: process.env.REACT_APP_PROD_HUNGARY
   },
+  {
+    title: "Australia",
+    value: "Australia",
+    flagCode: "au",
+    webLink: "https://master.d2g4qvcsrzrrim.amplifyapp.com/",
+    hook: process.env.REACT_APP_PROD_AUSTRALIA,
+    awsCode: "d2g4qvcsrzrrim",
+  },
 ];
