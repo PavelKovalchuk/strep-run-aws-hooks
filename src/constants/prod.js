@@ -28,4 +28,20 @@ export const ProdVariants = [
     hook: process.env.REACT_APP_PROD_AUSTRALIA,
     awsCode: "d2g4qvcsrzrrim",
   },
+  {
+    title: "Denmark",
+    value: "Denmark",
+    flagCode: "dk",
+    webLink: "https://master.d2egc4u37jahzy.amplifyapp.com/",
+    hook: process.env.REACT_APP_PROD_DENMARK,
+    awsCode: "d2egc4u37jahzy",
+  },
+  {
+    title: "Sweden",
+    value: "Sweden",
+    flagCode: "se",
+    webLink: "https://master.dahnr38ichbbk.amplifyapp.com/",
+    hook: process.env.REACT_APP_PROD_SWEDEN,
+    awsCode: "dahnr38ichbbk",
+  },
 ];
