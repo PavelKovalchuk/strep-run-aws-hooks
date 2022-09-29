@@ -159,4 +159,20 @@ export const MasterVariants = [
     hook: process.env.REACT_APP_MASTER_SWITZERLAND,
     awsCode: "d3tv64kxbqh97e",
   },
+  {
+    title: "Poland",
+    value: "Poland",
+    flagCode: "pl",
+    webLink: "https://master.d1wruistfxvmbr.amplifyapp.com/",
+    hook: process.env.REACT_APP_MASTER_POLAND,
+    awsCode: "d1wruistfxvmbr",
+  },
+  {
+    title: "China",
+    value: "China",
+    flagCode: "cn",
+    webLink: "https://master.dw4rmtu0g0og3.amplifyapp.com/",
+    hook: process.env.REACT_APP_MASTER_CHINA,
+    awsCode: "dw4rmtu0g0og3",
+  },
 ];

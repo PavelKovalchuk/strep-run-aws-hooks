@@ -159,4 +159,20 @@ export const DevelopVariants = [
     hook: process.env.REACT_APP_DEVELOP_SWITZERLAND,
     awsCode: "d3tv64kxbqh97e",
   },
+  {
+    title: "Poland",
+    value: "Poland",
+    flagCode: "pl",
+    webLink: "https://develop.d1wruistfxvmbr.amplifyapp.com/",
+    hook: process.env.REACT_APP_DEVELOP_POLAND,
+    awsCode: "d1wruistfxvmbr",
+  },
+  {
+    title: "China",
+    value: "China",
+    flagCode: "cn",
+    webLink: "https://develop.dw4rmtu0g0og3.amplifyapp.com/",
+    hook: process.env.REACT_APP_DEVELOP_CHINA,
+    awsCode: "dw4rmtu0g0og3",
+  },
 ];
