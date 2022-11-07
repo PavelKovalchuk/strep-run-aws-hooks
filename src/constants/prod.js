@@ -60,4 +60,12 @@ export const ProdVariants = [
     hook: process.env.REACT_APP_PROD_NORWAY,
     awsCode: "d3qrime9idzajg",
   },
+  {
+    title: "Spain",
+    value: "Spain",
+    flagCode: "es",
+    webLink: "https://master.d357hctc3ka0ar.amplifyapp.com/",
+    hook: process.env.REACT_APP_PROD_SPAIN,
+    awsCode: "d357hctc3ka0ar",
+  },
 ];
